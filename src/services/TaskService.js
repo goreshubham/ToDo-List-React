@@ -3,7 +3,6 @@ import axios from 'axios';
 const BASE_URL = 'https://your-api-endpoint.com/tasks';
 
 class TaskService {
-  // Fetch all tasks
   static async getAllTasks() {
     try {
       const response = await axios.get(BASE_URL);
@@ -13,7 +12,6 @@ class TaskService {
     }
   }
 
-  // Fetch a specific task by ID
   static async getTaskById(id) {
     try {
       const response = await axios.get(`${BASE_URL}/${id}`);
@@ -23,7 +21,6 @@ class TaskService {
     }
   }
 
-  // Create a new task
   static async createTask(taskData) {
     try {
       const response = await axios.post(BASE_URL, taskData);
@@ -33,7 +30,6 @@ class TaskService {
     }
   }
 
-  // Update an existing task
   static async updateTask(id, taskData) {
     try {
       const response = await axios.put(`${BASE_URL}/${id}`, taskData);
@@ -43,7 +39,7 @@ class TaskService {
     }
   }
 
-  // Delete a task
+ 
   static async deleteTask(id) {
     try {
       await axios.delete(`${BASE_URL}/${id}`);

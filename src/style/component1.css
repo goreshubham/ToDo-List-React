@@ -1,6 +1,4 @@
-/* Component1 CSS File (component1.css) */
 
-/* Container for the table */
 .table-container {
     padding: 20px;
     background-color: #f9f9f9;
@@ -9,7 +7,7 @@
     max-width: 100%;
   }
   
-  /* Table Styles */
+ 
   .task-table {
     width: 100%;
     border-collapse: collapse;
@@ -23,25 +21,23 @@
     border-bottom: 1px solid #ddd;
   }
   
-  /* Table header */
   .table-header {
     background-color: #f1f1f1;
     color: #333;
     font-weight: bold;
   }
   
-  /* Alternate row colors */
+
   .table-row:nth-child(even) {
     background-color: #f2f2f2;
   }
   
-  /* Actions column */
   .actions-column {
     display: flex;
     gap: 10px;
   }
   
-  /* Buttons */
+
   .edit-button, .delete-button {
     padding: 8px 12px;
     border: none;
@@ -51,7 +47,6 @@
     transition: background-color 0.3s;
   }
   
-  /* Edit button */
   .edit-button {
     background-color: #007BFF;
     color: white;
@@ -61,7 +56,6 @@
     background-color: #0056b3;
   }
   
-  /* Delete button */
   .delete-button {
     background-color: #DC3545;
     color: white;
@@ -71,7 +65,7 @@
     background-color: #c82333;
   }
   
-  /* Empty message */
+  
   .empty-message {
     text-align: center;
     padding: 20px;
@@ -79,7 +73,7 @@
     font-size: 16px;
   }
   
-  /* Pagination Styles */
+ 
   .pagination {
     display: flex;
     justify-content: center;
@@ -99,14 +93,12 @@
     transition: background-color 0.3s;
   }
   
-  /* Disabled Pagination buttons */
   .pagination button[disabled] {
     background-color: #e0e0e0;
     cursor: not-allowed;
     color: #aaa;
   }
   
-  /* Pagination active page */
   .pagination span {
     padding: 8px 12px;
     border: 1px solid #ddd;

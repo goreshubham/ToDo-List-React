@@ -7,10 +7,8 @@ const Component1 = ({ formDataList, setFormDataList, setFilteredData, onEdit, on
   const [isDeletePopupOpen, setIsDeletePopupOpen] = useState(false);
   const [deleteTaskData, setDeleteTaskData] = useState(null);
 
-  // Calculate total pages
   const totalPages = Math.ceil(formDataList.length / itemsPerPage);
 
-  // Get current data for the page
   const currentData = formDataList.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -74,14 +72,13 @@ const Component1 = ({ formDataList, setFormDataList, setFilteredData, onEdit, on
         <p className="empty-message">No Task Assigned yet.</p>
       )}
 
-      {/* Pagination Controls */}
+     
       <div className="pagination">
         <button disabled={currentPage === 1} onClick={() => handlePageChange(currentPage - 1)}>Previous</button>
         <span>{currentPage} / {totalPages}</span>
         <button disabled={currentPage === totalPages} onClick={() => handlePageChange(currentPage + 1)}>Next</button>
       </div>
 
-      {/* Delete Popup */}
       {isDeletePopupOpen && (
         <div className="popup-overlay">
           <div className="popup-content">

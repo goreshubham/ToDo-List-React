@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../style/component2.css';  // Importing the CSS from the external file
+import '../style/component2.css'; 
 
 const Component2 = ({ onFormSubmit, initialData, onCancel }) => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const Component2 = ({ onFormSubmit, initialData, onCancel }) => {
       <form onSubmit={handleSubmit}>
         <h2>{initialData ? 'Edit Task' : 'New Task'}</h2>
         
-        {/* Assigned To and Status Fields */}
+        
         <div className="form-group two-fields">
           <div>
             <label htmlFor="assignedTo">Assigned To</label>
@@ -65,7 +65,6 @@ const Component2 = ({ onFormSubmit, initialData, onCancel }) => {
           </div>
         </div>
 
-        {/* Due Date and Priority Fields */}
         <div className="form-group two-fields">
           <div>
             <label htmlFor="dueDate">Due Date</label>
@@ -94,7 +93,7 @@ const Component2 = ({ onFormSubmit, initialData, onCancel }) => {
           </div>
         </div>
 
-        {/* Comments Field */}
+        
         <div className="form-group">
           <label htmlFor="comments">Comments</label>
           <textarea

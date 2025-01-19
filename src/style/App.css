@@ -9,7 +9,6 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Main App container */
 .app-container {
     display: flex;
     flex-direction: column;
@@ -20,13 +19,12 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Header Section */
 .app-header {
     width: 100%;
     background-color: var(--primary-color);
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Align search box to left and button to right */
+    justify-content: space-between; 
     align-items: center;
     color: white;
     box-shadow: 0 4px 8px var(--shadow-color);
@@ -38,7 +36,7 @@
     color: #000000d0;
 }
 
-/* Search Box and Button */
+
 .search-box-container {
     display: flex;
     align-items: center;
@@ -74,7 +72,6 @@
     background-color: var(--hover-color);
 }
 
-/* Main Content */
 .app-content {
     width: 100%;
     padding: 20px;
@@ -83,7 +80,7 @@
     border-radius: 8px;
 }
 
-/* Popup Overlay */
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -97,7 +94,6 @@
     z-index: 999;
 }
 
-/* Popup Content */
 .popup-content {
     background-color: var(--card-background-color);
     padding: 20px;
@@ -108,14 +104,13 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Header inside Popup */
 .popup-content h2 {
     margin-top: 0;
     font-size: 1.8rem;
     color: var(--text-color);
 }
 
-/* Form Fields */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -141,7 +136,7 @@
     outline: none;
 }
 
-/* Form Actions */
+
 .form-actions {
     display: flex;
     justify-content: flex-end;
@@ -174,7 +169,7 @@
     background-color: var(--hover-color);
 }
 
-/* Close Button in Popup */
+
 .popup-content .close-button {
     position: absolute;
     top: 10px;
@@ -190,7 +185,7 @@
     color: red;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     .search-box-container {
         flex-direction: column;
